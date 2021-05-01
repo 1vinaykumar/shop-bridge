@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "discount": 10,
+      "quantity": 50,
+      "price": 10000,
+      "description": "Realme 3 pro mobile phone",
+      "name": "Realme",
+      "id": 0
+    },
+    {
+      "id": 1,
+      "name": "Lenovo",
+      "description": "Lenovo Laptop",
+      "price": 25000,
+      "quantity": 5,
+      "discount": 20
+    },
+    {
+      "discount": 10,
+      "quantity": 5,
+      "price": 1234,
+      "description": "Wipro Light",
+      "name": "Wipro",
+      "id": 2
+    },
+    {
+      "discount": 20,
+      "quantity": 2,
+      "price": 1500,
+      "description": "Boat Headset",
+      "name": "Boat",
+      "id": 3
+    },
+    {
+      "discount": 10,
+      "quantity": 3,
+      "price": 1000,
+      "description": "Boult Earphones",
+      "name": "Boult",
+      "id": 4
+    },
+    {
+      "discount": 20,
+      "quantity": 2,
+      "price": 5000,
+      "description": "Lenskart Spects",
+      "name": "Lenskart",
+      "id": 6
+    }
+  ]
+}

@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { CssBaseline } from "@material-ui/core";
+import ApplicationRoutes from "./routes";
+import store from "./state/store";
+import reducer from "./state/reducer";
+import { useReducer } from "react";
+import { SnackbarProvider } from "notistack";
 
 function App() {
+  const reducerValue = useReducer(reducer);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <store.Provider value={reducerValue}>
+      <SnackbarProvider
+        maxSnack={3}
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+      >
+        <CssBaseline />
+        <ApplicationRoutes />
+      </SnackbarProvider>
+    </store.Provider>
   );
 }
 
